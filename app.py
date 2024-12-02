@@ -29,7 +29,7 @@ DEBUG7 = True
 
 class App:
     def __init__(self):
-        pass
+        self.tokenizedWords = []
 
 
     def seperateDashWords(self, word):
@@ -82,11 +82,13 @@ class App:
             else:
                 arrString2.append(word)
         if (DEBUG6) : print (arrString2)
-        if (DEBUG7) : pprint.pprint(arrString2)
+        # if (DEBUG7) : pprint.pprint(arrString2)
+        self.tokenizedWords = arrString2
 
 
 if __name__ == "__main__":
     app = App()
     app.main()
+    pprint.pprint(app.tokenizedWords)
     # main()
     # removeCharAtEnd("Hello!")
