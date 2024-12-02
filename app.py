@@ -89,6 +89,7 @@ class App:
 if __name__ == "__main__":
     app = App()
     app.main()
-    pprint.pprint(app.tokenizedWords)
+    # pprint.pprint(app.tokenizedWords)
+    print (app.tokenizedWords)
     # main()
     # removeCharAtEnd("Hello!")
