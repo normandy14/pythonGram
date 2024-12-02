@@ -5,13 +5,15 @@
 # remove commas and periods and odd punctuation
 # look out for special -- condition
 # an even more special case: way--in
+import pprint
 
 DEBUG = False
 DEBUG2 = False
 DEBUG3 = False
 DEBUG4 = False
-DEBUG5 = True
-DEBUG6 = True
+DEBUG5 = False
+DEBUG6 = False
+DEBUG7 = True
 
 # Future Bug:  if its way-- and check if [-1] is -, then check word [-2] for -, and then remove
 
@@ -54,7 +56,6 @@ def main():
         # if (DEBUG4): print ("word after lowercase is: {}".format(newWord2))
         arrString.append(newWord2)
     if (DEBUG5): print (arrString)
-    '''
     arrString2 = []
     for word in arrString:
         if "--" in word:
@@ -65,7 +66,8 @@ def main():
         else:
             arrString2.append(word)
     if (DEBUG6) : print (arrString2)
-    '''
+    if (DEBUG7) : pprint.pprint(arrString2)
+
 
 if __name__ == "__main__":
     main()
