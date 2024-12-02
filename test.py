@@ -1,5 +1,6 @@
 
 
+"""
 def getDashOut(word):
     if "-" in word:
         print ("dash in word")
@@ -21,11 +22,13 @@ def getDashOut2(word):
 
     else:
         print ("no dash in word")
+"""
 
 if __name__ == "__main__":
+    print ("Hello World")
+    """
     words = getDashOut2("cat--person")
     print (words)
-    """
     getDashOut2("dog")
     getDashOut2("cat--person")
     getDashOut2("television")

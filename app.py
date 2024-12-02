@@ -5,6 +5,16 @@
 # remove commas and periods and odd punctuation
 # look out for special -- condition
 # an even more special case: way--in
+
+# The next part:
+# Some type of dictionary
+# What about edge case: the last word? # maybe it isn't logged in the dictionary
+
+# Remember to manage:
+# with open("taleSmall.txt") as file:
+# with open("taleMed.txt") as file:
+# its best to use taleSmall.txt in the beginning
+
 import pprint
 
 DEBUG = False
@@ -43,12 +53,13 @@ def makeLowerCase(word):
 def main():
     text = ""
     with open("taleSmall.txt") as file:
+    # with open("taleMed.txt") as file:
         text = file.read()
     # print (text)
     arr = text.split()
     arrString = []
     for word in arr:
-        print (word)
+        # print (word)
         if (DEBUG3): print ("word before transformation is: {}".format(word))
         newWord = removeCharAtEnd(word)
         if (DEBUG3): print ("word after remove at end is: {}".format(newWord))
