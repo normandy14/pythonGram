@@ -46,10 +46,11 @@ def main():
     arr = text.split()
     arrString = []
     for word in arr:
+        print (word)
         if (DEBUG3): print ("word before transformation is: {}".format(word))
         newWord = removeCharAtEnd(word)
         if (DEBUG3): print ("word after remove at end is: {}".format(newWord))
-        newWord2 = makeLowerCase(word)
+        newWord2 = makeLowerCase(newWord)
         # if (DEBUG4): print ("word after lowercase is: {}".format(newWord2))
         arrString.append(newWord2)
     if (DEBUG5): print (arrString)
