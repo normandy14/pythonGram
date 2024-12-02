@@ -27,6 +27,11 @@ DEBUG7 = True
 
 # Future Bug:  if its way-- and check if [-1] is -, then check word [-2] for -, and then remove
 
+class App:
+    def __init__(self):
+        pass
+
+
 def seperateDashWords(word):
     i = 0
     for c in word:
