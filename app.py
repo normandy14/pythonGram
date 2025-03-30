@@ -57,7 +57,7 @@ class App:
         word = word.lower()
         return word
 
-    def main(self):
+    def app(self):
         text = ""
         with open(TEXT_NAME) as file:
             # with open("taleMed.txt") as file:
@@ -90,7 +90,7 @@ class App:
 
 if __name__ == "__main__":
     app = App()
-    app.main()
+    app.app()
     # pprint.pprint(app.tokenizedWords)
     print (app.tokenizedWords)
     # main()
