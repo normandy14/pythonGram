@@ -1,0 +1,6 @@
+1. We successfully tokenized the tokenized words
+2. We added it to an instance variable called self tokenized Words
+3. Lets do a 1 gram!
+4. See what happens after each word
+5. Store the words in a hash map -- Use a Counter -- Do it isolated first
+6. The edge case is the last word, because nothing comes after it
