@@ -25,6 +25,8 @@ DEBUG5 = False
 DEBUG6 = False
 DEBUG7 = True
 
+TEXT_NAME = "taleSmall.txt"
+
 # Future Bug:  if its way-- and check if [-1] is -, then check word [-2] for -, and then remove
 
 class App:
@@ -57,7 +59,7 @@ class App:
 
     def main(self):
         text = ""
-        with open("taleSmall.txt") as file:
+        with open(TEXT_NAME) as file:
             # with open("taleMed.txt") as file:
             text = file.read()
         # print (text)
