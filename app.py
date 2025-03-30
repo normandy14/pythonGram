@@ -25,13 +25,12 @@ DEBUG5 = False
 DEBUG6 = False
 DEBUG7 = True
 
-TEXT_NAME = "taleSmall.txt"
-
 # Future Bug:  if its way-- and check if [-1] is -, then check word [-2] for -, and then remove
 
 class App:
-    def __init__(self):
+    def __init__(self, fileName):
         self.tokenizedWords = []
+        self.fileName = fileName
 
 
     def seperateDashWords(self, word):
@@ -59,7 +58,7 @@ class App:
 
     def app(self):
         text = ""
-        with open(TEXT_NAME) as file:
+        with open(self.fileName) as file:
             # with open("taleMed.txt") as file:
             text = file.read()
         # print (text)
