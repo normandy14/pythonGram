@@ -31,6 +31,7 @@ class App:
     def __init__(self, fileName):
         self.tokenizedWords = []
         self.fileName = fileName
+        self.oneGramDict = None
 
 
     def seperateDashWords(self, word):
@@ -86,11 +87,38 @@ class App:
         # if (DEBUG7) : pprint.pprint(arrString2)
         self.tokenizedWords = arrString2
 
+    def makeOneGram(self):
+        tokenizedWords = self.tokenizedWords
+        self.oneGramDict = {}
+
+        for i in range(len(tokenizedWords) - 1):
+            currentWord = tokenizedWords[i]
+            # print (currentWord)
+
+            nextWord = tokenizedWords[i+1]
+            # print (nextWord)
+
+            if currentWord not in self.oneGramDict:
+                self.oneGramDict[currentWord] = {} # to get to {'cat': {}}
+                if nextWord not in self.oneGramDict[currentWord]:
+                    self.oneGramDict[currentWord][nextWord] = 1
+                    # print (oneGramDict)
+                else: # nextWord really is in oneGramDict[currentWord]
+                    self.oneGramDict[currentWord][nextWord] += 1
+                    # print (oneGramDict)
+            else:
+                if nextWord not in self.oneGramDict[currentWord]:
+                    self.oneGramDict[currentWord][nextWord] = 1
+                    # print (oneGramDict)
+                else: # nextWord really is in oneGramDict[currentWord]
+                    self.oneGramDict[currentWord][nextWord] += 1
+        # print (self.oneGramDict)
+
 
 if __name__ == "__main__":
-    app = App()
+    app = App("taleSmall.txt")
     app.app()
     # pprint.pprint(app.tokenizedWords)
-    print (app.tokenizedWords)
-    # main()
-    # removeCharAtEnd("Hello!")
+    # print (app.tokenizedWords)
+    app.makeOneGram()
+    print (app.oneGramDict)
