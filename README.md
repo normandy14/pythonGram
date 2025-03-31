@@ -26,7 +26,7 @@ This program uses Python3 :snake:. The program works in the following way:
 ### Pipenv
 This program uses Pipenv. Pipenv is a Python virtualenv management tool. Pipenv automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your Pipfile as you install/uninstall packages. It also generates a project Pipfile.lock, which is used to produce deterministic builds.
 
-To install Pipenv, use the following link: [link to Install Pipenv](https://pipenv.pypa.io/en/latest/)
+To install Pipenv, use the following link: [link to install pipenv](https://pipenv.pypa.io/en/latest/)
 
 ### taleSmall.txt and taleMed.txt
 
