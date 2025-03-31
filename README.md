@@ -28,6 +28,14 @@ This program uses Pipenv. Pipenv is a Python virtualenv management tool. Pipenv 
 
 To install Pipenv, use the following link: [Link to Install Pipenv](https://pipenv.pypa.io/en/latest/)
 
+### taleSmall.txt and taleMed.txt
+
+Both files are from tale.txt. Tale.txt is simply the text, A Tale and Two Cities, from [Project Guttenburg](https://www.gutenberg.org/ebooks/98). The Plain Text UTF-8 option.
+
+taleSmall.txt is a small length excerpt of the text
+
+taleMed.txt is a medium length excerpt of the text
+
 ## Running the program
 
 Install the Pipenv dependencies using:
