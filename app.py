@@ -157,9 +157,11 @@ if __name__ == "__main__":
     print ("----One Gram----")
     app.makeOneGram()
     print (app.oneGramDict)
-    # print ("was: {}".format(app.oneGramDict["was"]))
+    print ("----Was LookUp----")
+    print ("was: {}".format(app.oneGramDict["was"]))
 
     print ("----Two Gram----")
     app.makeTwoGram()
     print (app.twoGramDict)
-    # print ("was: {}".format(app.twoGramDict["was"]))
+    print ("----Was LookUp----")
+    print ("was: {}".format(app.twoGramDict["was"]))
