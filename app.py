@@ -114,11 +114,49 @@ class App:
                     self.oneGramDict[currentWord][nextWord] += 1
         # print (self.oneGramDict)
 
+    def makeTwoGram(self):
+        tokenizedWords = self.tokenizedWords
+        self.twoGramDict = {}
+
+        for i in range(len(tokenizedWords) - 2):
+            currentWord = tokenizedWords[i]
+
+            nextWord = tokenizedWords[i+1]
+            nextNextWord = tokenizedWords[i+2]
+
+            nextWords = nextWord + " " + nextNextWord
+
+            # print ("current word: {}".format(currentWord))
+            # print ("next word: {}".format(nextWord))
+            # print ("next next word: {}".format(nextNextWord))
+            # print ("next words: {}".format(nextWords))
+            # print ("----------------")
+
+            if currentWord not in self.twoGramDict:
+                self.twoGramDict[currentWord] = {}
+                if nextWords not in self.twoGramDict[currentWord]:
+                    self.twoGramDict[currentWord][nextWords] = 1
+                    # print (superHash)
+                else: # nextWord really is in superHash[currentWord]
+                    self.twoGramDict[currentWord][nextWords] += 1
+                    # print (superHash)
+            else:
+                if nextWords not in self.twoGramDict[currentWord]:
+                    self.twoGramDict[currentWord][nextWords] = 1
+                    # print (self.twoGramDict)
+                else: # nextWord really is in superHash[currentWord]
+                    self.twoGramDict[currentWord][nextWords] += 1
+
 
 if __name__ == "__main__":
     app = App("taleSmall.txt")
     app.app()
     # pprint.pprint(app.tokenizedWords)
     # print (app.tokenizedWords)
+    print ("----One Gram----")
     app.makeOneGram()
     print (app.oneGramDict)
+    print ("----Two Gram----")
+    app.makeTwoGram()
+    print (app.twoGramDict)
+    print ("was: {}".format(app.twoGramDict["was"]))
