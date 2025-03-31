@@ -73,7 +73,7 @@ Implementation of Python Gram built with the following technologies:
 
 ## License
 
-This project is licensed under the GPL-3.0 license [License](LICENSE) - see the LICENSE.md file for details
+This project is licensed under the GNU General Public License v3.0 [License](LICENSE) - see the LICENSE.md file for details
 
 ## Authors
 
