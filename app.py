@@ -153,10 +153,13 @@ if __name__ == "__main__":
     app.app()
     # pprint.pprint(app.tokenizedWords)
     # print (app.tokenizedWords)
+
     print ("----One Gram----")
     app.makeOneGram()
     print (app.oneGramDict)
+    # print ("was: {}".format(app.oneGramDict["was"]))
+
     print ("----Two Gram----")
     app.makeTwoGram()
     print (app.twoGramDict)
-    print ("was: {}".format(app.twoGramDict["was"]))
+    # print ("was: {}".format(app.twoGramDict["was"]))
