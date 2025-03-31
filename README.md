@@ -30,7 +30,7 @@ To install Pipenv, use the following link: [link to install pipenv](https://pipe
 
 ### taleSmall.txt and taleMed.txt
 
-Both files are from tale.txt. Tale.txt is simply the text, A Tale and Two Cities, from [Project Guttenburg](https://www.gutenberg.org/ebooks/98). The Plain Text UTF-8 option.
+Both files are from tale.txt. Tale.txt is simply the text, A Tale and Two Cities, from [project guttenburg](https://www.gutenberg.org/ebooks/98). The Plain Text UTF-8 option.
 
 taleSmall.txt is a small length excerpt of the text
 
